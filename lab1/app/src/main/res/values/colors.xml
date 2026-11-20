@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 品牌主色调：用学校的蓝色系，避免默认紫色主题 -->
+    <color name="brand_primary">#14508C</color>
+    <color name="brand_primary_dark">#0D3862</color>
+    <color name="brand_container">#D6E4F7</color>
+    <color name="brand_on_container">#0A2540</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ic_launcher_background">#14508C</color>
+</resources>

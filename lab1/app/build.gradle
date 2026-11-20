@@ -1,0 +1,43 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    // 命名空间：决定自动生成的 R 类所在包名，必须与代码里的 package 一致
+    namespace = 'com.fjnu.lhbl.lab1'
+
+    // 编译时使用的 SDK 版本（用哪个版本的 API 来编译）
+    compileSdk = 37
+
+    defaultConfig {
+        applicationId "com.fjnu.lhbl.lab1"
+        // 最低支持 Android 8.0（自适应图标自 API 26 起支持）
+        minSdk = 26
+        targetSdk = 37
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    // 打开 ViewBinding：自动为每个布局生成一个绑定类，告别 findViewById
+    buildFeatures {
+        viewBinding = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled = false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation libs.androidx.appcompat
+    implementation libs.google.material
+    implementation libs.androidx.activity
+}

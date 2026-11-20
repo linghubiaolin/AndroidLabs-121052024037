@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">实验1-Android开发基础</string>
+    <string name="hello_android">你好，Android！</string>
+    <string name="subtitle">福建师范大学 · Android开发基础 实验一</string>
+    <string name="student_info">学号：121052024037　姓名：令狐标霖</string>
+    <string name="time_format">当前时间：%1$s</string>
+    <string name="click_count">你已点击 %1$d 次</string>
+    <string name="click_toast">已点击 %1$d 次</string>
+    <string name="btn_count">点我一下</string>
+    <string name="btn_jump">跳转到第二个页面</string>
+    <string name="reply_empty">等待第二个页面返回的消息……</string>
+    <string name="reply_prefix">第二个页面回传：%1$s</string>
+    <string name="second_title">页面二 · Intent 演示</string>
+    <string name="second_hint">这个页面是通过显式 Intent 从首页打开的</string>
+    <string name="second_count">从首页带来的点击次数：%1$d</string>
+    <string name="btn_back">返回首页并回传消息</string>
+    <string name="reply_message">数据已成功接收，实验一完成！</string>
+</resources>

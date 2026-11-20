@@ -1,0 +1,18 @@
+# 版本目录（Version Catalog）：全工程的依赖版本集中在这里管理
+# 升级依赖只需要改这一处，build.gradle 里用 libs.xxx 引用
+
+[versions]
+# AGP 版本必须与 Android Studio 支持的版本区间一致，
+# 本机 Studio 2026.1.4 最高支持 9.4.1，写 9.5.1 会 Sync 失败
+agp = "9.4.1"
+appcompat = "1.8.0"
+material = "1.14.0"
+activity = "1.13.0"
+
+[libraries]
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+google-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
