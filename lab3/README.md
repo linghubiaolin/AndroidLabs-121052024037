@@ -56,3 +56,22 @@ app/src/main/res/
 
 - 通知需要 Android 13 及以上的 `POST_NOTIFICATIONS` 权限，入口页会在启动时申请；拒绝授权时页面仍可正常使用。
 - 图片资源来自实验提供的素材，仅用于课程实验。
+
+## 运行截图
+
+<p align="center">
+<img src="../docs/screenshots/lab3/lab3-01-main.png" width="200">
+<img src="../docs/screenshots/lab3/lab3-02-listview.png" width="200">
+<img src="../docs/screenshots/lab3/lab3-03-dialog.png" width="200">
+<img src="../docs/screenshots/lab3/lab3-04-menu-page.png" width="200">
+</p>
+
+上排：入口页、图文列表、自定义登录对话框、XML 菜单页。
+
+<p align="center">
+<img src="../docs/screenshots/lab3/lab3-05-menu-overflow.png" width="200">
+<img src="../docs/screenshots/lab3/lab3-07-actionmode.png" width="200">
+<img src="../docs/screenshots/lab3/lab3-08-recycler.png" width="200">
+</p>
+
+下排：菜单子项展开、`ActionMode` 选中态、`RecyclerView` 卡片列表。

@@ -70,10 +70,27 @@ adb shell am start -S -n com.example.android.notepad/.NotesList
 
 ## 运行截图
 
-模拟器（Pixel 7 / API 36）实测截图共 14 张，放在仓库根目录的 [docs/screenshots/midterm/](../docs/screenshots/midterm)，按验证顺序编号：空列表(01)、带时间戳的列表(02)、搜索(03)、长按菜单(04)、收藏置顶(05)、编辑页(06)、导出保存页(07)、导出完成(08)、新建笔记(09)、修改标题(10)、卡片底色(11)、排序对话框(12)、按标题排序(12-sort-title)、导入选择与导入完成(13、14)。
+模拟器（Pixel 7 / API 36）实测截图共 14 张，位于仓库根目录的 [docs/screenshots/midterm/](../docs/screenshots/midterm)。
+
+<p align="center">
+<img src="../docs/screenshots/midterm/02-list-time.png" width="200">
+<img src="../docs/screenshots/midterm/03-search.png" width="200">
+<img src="../docs/screenshots/midterm/11-note-color.png" width="200">
+<img src="../docs/screenshots/midterm/05-starred.png" width="200">
+</p>
+
+上排：带时间戳的列表、搜索 `android` 同时命中标题与正文、四色卡片、收藏置顶。
+
+<p align="center">
+<img src="../docs/screenshots/midterm/07-export-dialog.png" width="200">
+<img src="../docs/screenshots/midterm/12-sort-dialog.png" width="200">
+<img src="../docs/screenshots/midterm/13-import-picker.png" width="200">
+<img src="../docs/screenshots/midterm/14-import-done.png" width="200">
+</p>
+
+下排：导出保存页、排序方式选择、导入时的文件选择、导入成功。
 
 ## 原工程说明
 
 项目来自于官方早期的数据库操作的基本教程，更多解析参考 [Android Sample--NotePad解析](https://blog.csdn.net/llfjfz/article/details/67638499)。
-
 
