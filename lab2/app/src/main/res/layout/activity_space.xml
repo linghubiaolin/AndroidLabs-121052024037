@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 实验四：约束布局实现太空订票界面 -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- 顶部三个图标入口 -->
+    <LinearLayout
+        android:id="@+id/headerBar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_space_header"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:contentDescription="空间站"
+                android:scaleType="fitCenter"
+                android:src="@drawable/space_station_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Space Stations"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:contentDescription="航班"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rocket_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flights"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:contentDescription="漫游车"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rover_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rovers"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 出发地 DCA -->
+    <TextView
+        android:id="@+id/tvDca"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/space_green"
+        android:gravity="center"
+        android:text="DCA"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/swapBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerBar" />
+
+    <!-- 中间的换乘按钮，垂直方向与两个绿色方块居中对齐 -->
+    <FrameLayout
+        android:id="@+id/swapBox"
+        android:layout_width="80dp"
+        android:layout_height="108dp"
+        android:background="@drawable/bg_space_swap"
+        app:layout_constraintBottom_toBottomOf="@id/tvDca"
+        app:layout_constraintEnd_toStartOf="@id/tvMars"
+        app:layout_constraintStart_toEndOf="@id/tvDca"
+        app:layout_constraintTop_toTopOf="@id/tvDca">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:contentDescription="切换方向"
+            android:src="@drawable/double_arrows" />
+    </FrameLayout>
+
+    <!-- 目的地 MARS -->
+    <TextView
+        android:id="@+id/tvMars"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/space_green"
+        android:gravity="center"
+        android:text="MARS"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvDca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/swapBox"
+        app:layout_constraintTop_toTopOf="@id/tvDca" />
+
+    <!-- 单程 -->
+    <LinearLayout
+        android:id="@+id/oneWayBox"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/space_orange"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@id/tvDca"
+        app:layout_constraintStart_toStartOf="@id/tvDca"
+        app:layout_constraintTop_toBottomOf="@id/tvDca">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="One Way"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/bg_circle_white">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:contentDescription="单程"
+                android:src="@drawable/single_arrow" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- 乘客人数 -->
+    <TextView
+        android:id="@+id/tvTraveller"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/space_orange"
+        android:gravity="center"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="1 Traveller"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/oneWayBox"
+        app:layout_constraintTop_toBottomOf="@id/oneWayBox" />
+
+    <!-- 火箭 -->
+    <ImageView
+        android:id="@+id/ivRocket"
+        android:layout_width="34dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="火箭"
+        android:scaleType="fitCenter"
+        android:src="@drawable/rocket_icon"
+        app:layout_constraintBottom_toBottomOf="@id/ivGalaxy"
+        app:layout_constraintEnd_toStartOf="@id/ivGalaxy" />
+
+    <!-- 星球：水平偏右、垂直偏下，用 bias 控制相对位置 -->
+    <ImageView
+        android:id="@+id/ivGalaxy"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="星球"
+        android:scaleType="fitCenter"
+        android:src="@drawable/galaxy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <!-- 底部起飞按钮 -->
+    <TextView
+        android:id="@+id/tvDepart"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/space_green"
+        android:gravity="center"
+        android:letterSpacing="0.12"
+        android:text="DEPART"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

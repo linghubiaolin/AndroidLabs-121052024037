@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">界面布局实验</string>
+
+    <string name="exp1_title">实验一 线性布局</string>
+    <string name="exp2_title">实验二 表格布局</string>
+    <string name="exp3_title">ConstraintLayoutTest</string>
+    <string name="exp4_title">Space Stations</string>
+    <string name="exp5_title">课程学习任务</string>
+</resources>

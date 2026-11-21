@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 表格布局 Import 行的小图标（下箭头） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="@color/text_primary"
+        android:pathData="M12,4 L12,15 M7,10 L12,15 L17,10 M5,19 L19,19"
+        android:strokeWidth="1.6"
+        android:strokeColor="@color/text_primary"
+        android:fillAlpha="0" />
+</vector>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_500">#009688</color>
+    <color name="teal_700">#00796B</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <!-- 线性布局：格子 -->
+    <color name="cell_bg">#FFFFFFFF</color>
+    <color name="grid_line">#FFBDBDBD</color>
+    <color name="text_primary">#FF212121</color>
+    <color name="text_secondary">#FF757575</color>
+
+    <!-- 计算器 -->
+    <color name="display_bg">#FFC6BE86</color>
+    <color name="key_bg">#FFE3E3E3</color>
+
+    <!-- 约束布局二（太空订票） -->
+    <color name="space_green">#FF2E6B34</color>
+    <color name="space_orange">#FFB35F1F</color>
+    <color name="space_header">#FFF5F5F5</color>
+    <color name="space_divider">#FFDDDDDD</color>
+
+    <!-- Compose 任务清单 -->
+    <color name="compose_red">#FFD32F2F</color>
+    <color name="compose_bg">#FFF5F5F5</color>
+</resources>

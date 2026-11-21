@@ -14,8 +14,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # 新增实验时，在这里追加目录名即可，例如 [lab1, lab2]
-        lab: [ lab1 ]
+        # 新增实验时，在这里追加目录名即可，例如 [lab1, lab2, lab3]
+        lab: [ lab1, lab2 ]
 
     defaults:
       run:

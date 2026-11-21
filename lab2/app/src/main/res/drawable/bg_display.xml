@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 计算器顶部显示框：浅卡其底色 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/display_bg" />
+    <corners android:radius="2dp" />
+</shape>

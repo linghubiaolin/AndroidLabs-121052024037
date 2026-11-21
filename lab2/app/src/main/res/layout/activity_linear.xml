@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 实验一：线性布局实现 4×4 等分网格 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grid_line"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- 第 1 行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/GridCell"
+            android:text="One,One" />
+
+        <TextView
+            style="@style/GridCell"
+            android:text="One,Two" />
+
+        <TextView
+            style="@style/GridCell"
+            android:text="One,Three" />
+
+        <TextView
+            style="@style/GridCell"
+            android:text="One,Four" />
+    </LinearLayout>
+
+    <!-- 第 2 行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/GridCell"
+            android:text="Two,One" />
+
+        <TextView
+            style="@style/GridCell"
+            android:text="Two,Two" />
+
+        <TextView
+            style="@style/GridCell"
+            android:text="Two,Three" />
+
+        <TextView
+            style="@style/GridCell"
+            android:text="Two,Four" />
+    </LinearLayout>
+
+    <!-- 第 3 行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/GridCell"
+            android:text="Three,One" />
+
+        <TextView
+            style="@style/GridCell"
+            android:text="Three,Two" />
+
+        <TextView
+            style="@style/GridCell"
+            android:text="Three,Three" />
+
+        <TextView
+            style="@style/GridCell"
+            android:text="Three,Four" />
+    </LinearLayout>
+
+    <!-- 第 4 行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/GridCell"
+            android:text="Four,One" />
+
+        <TextView
+            style="@style/GridCell"
+            android:text="Four,Two" />
+
+        <TextView
+            style="@style/GridCell"
+            android:text="Four,Three" />
+
+        <TextView
+            style="@style/GridCell"
+            android:text="Four,Four" />
+    </LinearLayout>
+
+</LinearLayout>
