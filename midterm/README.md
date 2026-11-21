@@ -73,19 +73,19 @@ adb shell am start -S -n com.example.android.notepad/.NotesList
 模拟器（Pixel 7 / API 36）实测截图共 14 张，直接放在本目录。
 
 <p align="center">
-<img src="02-list-time.png" width="200">
-<img src="03-search.png" width="200">
-<img src="11-note-color.png" width="200">
-<img src="05-starred.png" width="200">
+<img src="images/02-list-time.png" width="200">
+<img src="images/03-search.png" width="200">
+<img src="images/11-note-color.png" width="200">
+<img src="images/05-starred.png" width="200">
 </p>
 
 上排：带时间戳的列表、搜索 `android` 同时命中标题与正文、四色卡片、收藏置顶。
 
 <p align="center">
-<img src="07-export-dialog.png" width="200">
-<img src="12-sort-dialog.png" width="200">
-<img src="13-import-picker.png" width="200">
-<img src="14-import-done.png" width="200">
+<img src="images/07-export-dialog.png" width="200">
+<img src="images/12-sort-dialog.png" width="200">
+<img src="images/13-import-picker.png" width="200">
+<img src="images/14-import-done.png" width="200">
 </p>
 
 下排：导出保存页、排序方式选择、导入时的文件选择、导入成功。
@@ -93,5 +93,6 @@ adb shell am start -S -n com.example.android.notepad/.NotesList
 ## 原工程说明
 
 项目来自于官方早期的数据库操作的基本教程，更多解析参考 [Android Sample--NotePad解析](https://blog.csdn.net/llfjfz/article/details/67638499)。
+
 
 
