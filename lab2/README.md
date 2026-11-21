@@ -49,19 +49,20 @@ LayoutLab/
 ## 运行截图
 
 <p align="center">
-<img src="../docs/screenshots/lab2/lab2-01-nav.png" width="200">
-<img src="../docs/screenshots/lab2/lab2-02-linear.png" width="200">
-<img src="../docs/screenshots/lab2/lab2-03-table.png" width="200">
-<img src="../docs/screenshots/lab2/lab2-04-calc.png" width="200">
+<img src="lab2-01-nav.png" width="200">
+<img src="lab2-02-linear.png" width="200">
+<img src="lab2-03-table.png" width="200">
+<img src="lab2-04-calc.png" width="200">
 </p>
 
 上排：Compose 目录页、4×4 网格、表格布局菜单、约束布局计算器。
 
 <p align="center">
-<img src="../docs/screenshots/lab2/lab2-05-space.png" width="200">
-<img src="../docs/screenshots/lab2/lab2-06-task-init.png" width="200">
-<img src="../docs/screenshots/lab2/lab2-07-task-add.png" width="200">
-<img src="../docs/screenshots/lab2/lab2-08-task-two.png" width="200">
+<img src="lab2-05-space.png" width="200">
+<img src="lab2-06-task-init.png" width="200">
+<img src="lab2-07-task-add.png" width="200">
+<img src="lab2-08-task-two.png" width="200">
 </p>
 
 下排：太空订票界面、Compose 任务清单的初始态 / 添加一条 / 追加两条后的刷新结果。
+

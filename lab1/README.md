@@ -57,10 +57,11 @@ AndroidLab1
 ## 运行截图
 
 <p align="center">
-<img src="../docs/screenshots/lab1/01-home.png" width="200">
-<img src="../docs/screenshots/lab1/02-click5.png" width="200">
-<img src="../docs/screenshots/lab1/03-second.png" width="200">
-<img src="../docs/screenshots/lab1/04-reply.png" width="200">
+<img src="01-home.png" width="200">
+<img src="02-click5.png" width="200">
+<img src="03-second.png" width="200">
+<img src="04-reply.png" width="200">
 </p>
 
 从左到右：首页初始态 → 点击五次后的计数与 Toast → 第二个页面显示传入的次数 → 回传消息在首页展示。
+
