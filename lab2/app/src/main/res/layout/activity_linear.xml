@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:background="@color/grid_line"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="8dp"
+    android:fitsSystemWindows="true">
 
     <!-- 第 1 行 -->
     <LinearLayout
@@ -104,3 +105,4 @@
     </LinearLayout>
 
 </LinearLayout>
+

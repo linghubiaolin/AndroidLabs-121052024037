@@ -9,13 +9,9 @@
         <item name="android:windowBackground">@color/white</item>
     </style>
 
-    <!-- 带 ActionBar：四个 XML 布局实验页使用，标题由 manifest 的 label 提供 -->
-    <style name="Theme.LayoutLab.ActionBar" parent="android:Theme.Material.Light.DarkActionBar">
-        <item name="android:colorPrimary">@color/teal_500</item>
-        <item name="android:colorPrimaryDark">@color/teal_700</item>
-        <item name="android:colorAccent">@color/teal_500</item>
-        <item name="android:windowBackground">@color/white</item>
-    </style>
+    <!-- 注：Android 15/16 起系统强制 edge-to-edge，旧式 ActionBar 会压住内容顶部，
+         因此四个 XML 布局页统一改用上面的 NoActionBar 主题，并在根布局加
+         android:fitsSystemWindows="true" 让内容避开状态栏。 -->
 
     <!-- 线性布局：等分格子样式，避免在 16 个 TextView 上重复写属性 -->
     <style name="GridCell">

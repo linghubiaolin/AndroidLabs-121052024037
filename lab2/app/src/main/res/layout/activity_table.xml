@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:padding="8dp"
+    android:fitsSystemWindows="true"
     android:stretchColumns="1">
 
     <!-- 表头：跨两列 -->
@@ -90,6 +91,8 @@
 
             <TextView
                 style="@style/TableText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Import..."
                 android:textStyle="bold" />
         </LinearLayout>
@@ -116,6 +119,8 @@
 
             <TextView
                 style="@style/TableText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Export..."
                 android:textStyle="bold" />
         </LinearLayout>
@@ -139,3 +144,4 @@
     </TableRow>
 
 </TableLayout>
+
