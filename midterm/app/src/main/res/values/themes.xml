@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        应用统一主题：Material Light + 无系统 ActionBar。
+        Android 15/16 起系统强制 edge-to-edge，系统 ActionBar 会压住内容顶部，
+        因此这里不用 ActionBar，页面标题栏都在各自布局里手写，
+        根布局加 android:fitsSystemWindows="true" 让内容避开状态栏。
+    -->
+    <style name="Theme.NotePad" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/brand</item>
+        <item name="android:colorPrimaryDark">@color/brand_dark</item>
+        <item name="android:colorAccent">@color/brand</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

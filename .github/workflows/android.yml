@@ -14,8 +14,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # 新增实验时，在这里追加目录名即可，例如 [lab1, lab2, lab3, lab4]
-        lab: [ lab1, lab2, lab3 ]
+        # 新增实验时，在这里追加目录名即可，例如 [lab1, lab2, lab3, midterm, lab4]
+        lab: [ lab1, lab2, lab3, midterm ]
 
     defaults:
       run:
@@ -33,6 +33,12 @@ jobs:
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
+
+      # midterm 用到 compileSdk 37，跑测试机上一般没预装，这里按需安装
+      - name: Install Android SDK 37 (midterm only)
+        if: matrix.lab == 'midterm'
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-37" "build-tools;37.0.0" > /dev/null
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew

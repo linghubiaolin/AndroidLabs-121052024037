@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <string name="app_name">NotePad</string>
+    <string name="live_folder_name">Notes</string>
+
+    <string name="title_edit_title">修改标题</string>
+    <string name="title_create">新建笔记</string>
+    <string name="title_edit">编辑：%1$s</string>
+    <string name="title_notes_list">我的笔记</string>
+
+    <string name="menu_add">新建笔记</string>
+    <string name="menu_save">保存</string>
+    <string name="menu_delete">删除</string>
+    <string name="menu_open">打开</string>
+    <string name="menu_revert">放弃修改</string>
+    <string name="menu_copy">复制</string>
+    <string name="menu_paste">粘贴</string>
+
+    <string name="button_ok">确定</string>
+    <string name="text_title">Title:</string>
+
+    <string name="resolve_edit">Edit note</string>
+    <string name="resolve_title">修改标题</string>
+
+    <string name="error_title">Error</string>
+    <string name="error_message">Error loading note</string>
+    <string name="nothing_to_save">There is nothing to save</string>
+
+    <!-- 期中实验新增：列表页与编辑页的中文文案 -->
+    <string name="title_note">编辑笔记</string>
+    <string name="btn_new_note">＋ 新建</string>
+    <string name="btn_back">‹ 返回</string>
+    <string name="hint_search">搜索标题或内容…</string>
+    <string name="title_hint">输入笔记标题</string>
+  <string name="edit_hint">在这里记录你的想法…</string>
+  <string name="hint_empty">还没有笔记，点右上角「新建」写第一条吧</string>
+    <string name="menu_star">收藏 / 取消收藏</string>
+    <string name="menu_export">导出为 txt</string>
+    <string name="btn_more">⋮</string>
+  <string name="menu_color">笔记颜色</string>
+  <string name="menu_import">导入 txt</string>
+  <string name="menu_cancel">取消</string>
+  <string name="menu_sort">排序方式</string>
+  <string name="sort_dialog_title">排序方式</string>
+  <string name="sort_time">按修改时间</string>
+  <string name="sort_title">按标题</string>
+  <string name="sort_created">按创建时间</string>
+  <string name="color_white">白色</string>
+  <string name="color_blue">蓝色</string>
+  <string name="color_green">绿色</string>
+  <string name="color_yellow">黄色</string>
+  <string name="color_pink">粉色</string>
+  <string name="color_purple">紫色</string>
+  <string name="toast_imported">已导入：%1$s</string>
+  <string name="toast_import_failed">导入失败</string>
+  <string name="toast_exported">已导出到：%1$s</string>
+    <string name="toast_export_failed">导出失败，请重试</string>
+    <string name="untitled_note">（无标题笔记）</string>
+    <string name="empty_note">（空笔记，点击进入编辑）</string>
+</resources>
+
+
+
+
