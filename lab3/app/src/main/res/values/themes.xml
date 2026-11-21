@@ -1,0 +1,32 @@
+<resources>
+    <style name="Theme.Lab3" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/app_orange_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/app_orange_dark</item>
+    </style>
+
+    <style name="Theme.Lab3.NoActionBar" parent="Theme.Lab3">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Lab3.DialogHeader">
+        <item name="android:background">@color/app_orange</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <style name="Theme.Lab3.DialogField">
+        <item name="android:background">@null</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:textColorHint">@color/dialog_text</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

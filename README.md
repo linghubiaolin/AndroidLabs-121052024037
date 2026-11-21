@@ -17,6 +17,7 @@
 | --- | --- | --- | --- |
 | 实验一 | 创建第一个 Android 工程并同步至 GitHub | [`lab1/`](./lab1) | ✅ 已完成 |
 | 实验二 | 界面布局：线性布局 / 表格布局 / 约束布局 / Compose | [`lab2/`](./lab2) | ✅ 已完成 |
+| 实验三 | 界面组件：ListView / 自定义 AlertDialog / XML 菜单 / ActionMode / RecyclerView | [`lab3/`](./lab3) | ✅ 已完成 |
 
 ## 仓库结构
 
@@ -25,18 +26,17 @@ AndroidLabs-121052024037
 ├── README.md                        # 本文件：实验总览
 ├── .gitignore                       # 全仓库忽略规则
 ├── .github/workflows/android.yml    # CI：编译每个实验并上传 APK
-└── lab1/                            # 实验一：完整独立 Android 工程
-    ├── app/                         # 应用模块（Java 源码 + 资源 + 布局）
-    ├── gradle/                      # 版本目录 + wrapper（Gradle 9.9.1）
-    ├── settings.gradle              # 仓库声明（阿里云镜像优先）
-    ├── build.gradle                 # 顶层构建脚本
-    └── gradle.properties            # 全局构建参数
+├── lab1/                            # 实验一：Java + Material3 + Intent（完整独立工程）
+├── lab2/                            # 实验二：Kotlin + Compose + 四种布局
+└── lab3/                            # 实验三：ListView / 对话框 / 菜单 / ActionMode / RecyclerView
 ```
+
+每个 `labN/` 都是一个可以独立编译、独立运行的完整 Android 工程，
+内部结构与普通 Android 工程完全一致（`app/` + `gradle/` + `settings.gradle.kts`）。
 
 ## 如何打开某个实验
 
-Android Studio → `File → Open` → 选择 **`lab1`** 这个子目录（不是仓库根目录）。
-每个子目录都是一个可以独立编译、独立运行的完整 Android 工程。
+Android Studio → `File → Open` → 选择具体实验目录（例如 **`lab1`**），**不要**选仓库根目录。
 
 ## 命令行编译
 

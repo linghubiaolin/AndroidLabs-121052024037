@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">实验3 界面组件</string>
+    <string name="title_main">Android 界面组件实验</string>
+    <string name="title_listview">1. ListView + SimpleAdapter</string>
+    <string name="title_dialog">2. 自定义布局 AlertDialog</string>
+    <string name="title_menu">3. XML 定义菜单</string>
+    <string name="title_actionmode">4. ActionMode 上下文菜单</string>
+    <string name="title_recycler">5. RecyclerView 列表</string>
+
+    <string name="hint_listview">点击列表项：弹出 Toast，并发送一条通知</string>
+    <string name="hint_dialog">点击按钮弹出自定义布局的 AlertDialog</string>
+    <string name="hint_menu">点击右上角菜单，改变下方文字的字体大小与颜色</string>
+    <string name="hint_actionmode">长按列表项进入上下文操作模式，点删除图标移除该项</string>
+    <string name="hint_recycler">点击列表项显示名称，点击按钮追加一条记录</string>
+
+    <string name="btn_show_dialog">显示自定义对话框</string>
+    <string name="btn_add_record">增加一条记录</string>
+    <string name="menu_font_size">字体大小</string>
+    <string name="menu_size_small">小（10sp）</string>
+    <string name="menu_size_medium">中（16sp）</string>
+    <string name="menu_size_large">大（20sp）</string>
+    <string name="menu_normal_item">普通菜单项</string>
+    <string name="menu_font_color">字体颜色</string>
+    <string name="menu_color_red">红色</string>
+    <string name="menu_color_black">黑色</string>
+    <string name="action_delete">删除</string>
+    <string name="dialog_header">ANDROID APP</string>
+    <string name="dialog_username">Username</string>
+    <string name="dialog_password">Password</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_sign_in">Sign in</string>
+    <string name="test_text">用于测试的文本</string>
+    <string name="notify_channel_name">实验3 列表点击通知</string>
+    <string name="notify_content">来自实验3的一条例行通知</string>
+</resources>
