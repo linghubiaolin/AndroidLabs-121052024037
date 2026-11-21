@@ -1,26 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 根布局外包一层：顶部 Toolbar 作为 ActionBar 承载 XML 菜单，内容区单独内边距 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:orientation="vertical"
-    android:background="#FFFFFF"
-    android:padding="20dp">
+    android:background="#FFFFFF">
 
-    <TextView
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hint_menu"
-        android:textColor="#757575"
-        android:textSize="13sp" />
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/app_orange_dark"
+        app:title="@string/title_menu"
+        app:titleTextColor="@color/white" />
 
-    <TextView
-        android:id="@+id/tv_test"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:gravity="center"
-        android:text="@string/test_text"
-        android:textColor="@color/black"
-        android:textSize="16sp" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_menu"
+            android:textColor="#757575"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/test_text"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
 
 </LinearLayout>

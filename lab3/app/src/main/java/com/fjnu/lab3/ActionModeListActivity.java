@@ -30,6 +30,9 @@ public class ActionModeListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_action_mode);
 
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         listView = findViewById(android.R.id.list);
 
         items.add("One");
